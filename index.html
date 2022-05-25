@@ -84,9 +84,6 @@
     async function sendShare() {
       const result = await liff.shareTargetPicker([
         {
-          "type": "flex",
-          "altText": "Flex Message",
-          "contents": {
   "type": "bubble",
   "size": "giga",
   "hero": {
@@ -124,7 +121,7 @@
             "contents": [
               {
                 "type": "image",
-                "url": "https://pbs.twimg.com/media/FTlAxLNaIAAz1Lv.jpg",
+                "url": "https://sv1.picz.in.th/images/2022/05/22/Hbybak.png",
                 "aspectRatio": "60:50",
                 "size": "full",
                 "gravity": "center",
@@ -138,12 +135,33 @@
           }
         ],
         "offsetTop": "3px"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "แชร์ต่อ",
+              "altUri": {
+                "desktop": "https://kruaunjaidee.github.io/covid19/"
+              },
+              "uri": "https://kruaunjaidee.github.io/covid19/"
+            }
+          }
+        ],
+        "action": {
+          "type": "uri",
+          "label": "share",
+          "uri": "https://liff.line.me/1657150177-y1J75nxp"
+        }
       }
     ],
     "paddingAll": "0px"
   }
-}
-    }//ปิด Flex
+}//ปิด Flex
       ])
     }
 
