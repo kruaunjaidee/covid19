@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
-  <title>LIFF COVID-19</title>
+  <title>Covid-19 LIFF App</title>
   <style>
   .btnShare {
   border: solid;
-  color: white;
+  color: red;
   padding: 16px 100px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 45px;
-  margin: 4px 2px;
+  text-decoration: solid;
+  display: block;
+  font-size: 50px;
+  margin: auto;
   transition-duration: 0.4s;
   cursor: pointer;
 }
@@ -22,42 +23,62 @@
   background-color: rgb(239, 8, 8); 
   color: white; 
   border: 2px solid #4CAF50;
+  text-align: center;
+  display: block;
+  margin: auto;
 }
 
 .btnShare:hover {
   background-color: #c7ea17;
   color: black;
+  text-align: center;
+  display: block;
+  margin: auto;
 }
 
 .btnLogin {
   background-color: white; 
   color: black; 
   border: 2px solid #008CBA;
+  text-align: center;
+  display: block;
+  margin: auto;
 }
 
 .btnLogin:hover {
   background-color: #008CBA;
   color: white;
+  text-align: center;
+  display: block;
+  margin: auto;
 }
 .btnLogOut {
   background-color: white; 
   color: black; 
   border: 2px solid #008CBA;
+  text-align: center;
+  display: block;
+  margin: auto;
 }
 
 .btnLogOut:hover {
   background-color: #008CBA;
   color: white;
+  text-align: center;
+  display: block;
+  margin: auto;
 }
-
 </style>
+ 
 </head>
 <body>
   <img style="display:block;margin:auto;" src="https://sv1.picz.in.th/images/2022/05/20/HEd7Ol.png" width="400">
   <br>
-  <button class="btnShare" onclick="sendShare()">แชร์ข้อมูล<br>โควิด-19</button>
-  <button class="btnLogin" onclick="liff.login()">Log In</button>
+  
+  <button class="btnShare" onclick="sendShare()">แชร์ข้อมูล<br>โควิด-19</button><br>
+  <button class="btnLogin" onclick="liff.login()">Log In</button><br>
   <button class="btnLogOut" onclick="logOut()">Log Out</button>
+  
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
   <script>
     async function sendShare() {
