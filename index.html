@@ -84,77 +84,85 @@
     async function sendShare() {
       const result = await liff.shareTargetPicker([
         {
-          "type": "flex",
-          "altText": "Flex Message",
-          "contents": {
-            
   "type": "bubble",
+  "size": "giga",
+  "hero": {
+    "type": "video",
+    "url": "https://res.cloudinary.com/gukkghu/video/upload/v1653125544/gukkghu/%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD_zt07gt.mp4",
+    "previewUrl": "https://res.cloudinary.com/gukkghu/image/upload/v1653125543/gukkghu/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD_29.7_21%E0%B8%8B%E0%B8%A1._ejt2rg.png",
+    "altContent": {
+      "type": "image",
+      "size": "full",
+      "url": "https://res.cloudinary.com/gukkghu/image/upload/v1653125543/gukkghu/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD_29.7_21%E0%B8%8B%E0%B8%A1._ejt2rg.png",
+      "animated": true,
+      "aspectRatio": "16:9"
+    },
+    "aspectRatio": "16:9"
+  },
   "body": {
     "type": "box",
     "layout": "vertical",
     "contents": [
       {
-        "type": "image",
-        "url": "https://sv1.picz.in.th/images/2022/05/20/HESfd0.png",
-        "size": "full",
-        "aspectMode": "cover",
-        "aspectRatio": "1:1",
-        "gravity": "center",
-        "animated": true
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [],
-        "position": "absolute",
-        "background": {
-          "type": "linearGradient",
-          "angle": "0deg",
-          "endColor": "#00000000",
-          "startColor": "#00000099"
-        },
-        "width": "100%",
-        "height": "40%",
-        "offsetBottom": "0px",
-        "offsetStart": "0px",
-        "offsetEnd": "0px"
-      },
-      {
         "type": "box",
         "layout": "horizontal",
         "contents": [
           {
+            "type": "image",
+            "url": "https://sv1.picz.in.th/images/2022/05/20/HESfd0.png",
+            "size": "full",
+            "gravity": "center",
+            "animated": true,
+            "aspectMode": "cover"
+          },
+          {
             "type": "box",
-            "layout": "vertical",
+            "layout": "horizontal",
             "contents": [
               {
                 "type": "image",
+                "url": "https://sv1.picz.in.th/images/2022/05/22/Hbybak.png",
+                "aspectRatio": "60:50",
                 "size": "full",
-                "aspectMode": "cover",
-                "aspectRatio": "1:1",
                 "gravity": "center",
-                //เปลี่ยนภาพตรงนี้
-                "url": "https://sv1.picz.in.th/images/2022/05/20/HEdfWV.jpg",
-                "offsetTop": "xs",
-                "offsetBottom": "none",
-                "animated": true
+                "offsetStart": "5px",
+                "offsetBottom": "5px"
               }
             ],
-            "spacing": "xs"
+            "position": "absolute",
+            "width": "100%",
+            "height": "100%"
           }
         ],
-        "position": "absolute",
-        "offsetBottom": "0px",
-        "offsetStart": "0px",
-        "offsetEnd": "0px",
-        "paddingAll": "20px"
+        "offsetTop": "3px"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "แชร์ต่อ",
+              "altUri": {
+                "desktop": "https://kruaunjaidee.github.io/covid19/"
+              },
+              "uri": "https://kruaunjaidee.github.io/covid19/"
+            }
+          }
+        ],
+        "action": {
+          "type": "uri",
+          "label": "share",
+          "uri": "https://liff.line.me/1657150177-y1J75nxp"
+        }
       }
     ],
     "paddingAll": "0px"
   }
-  
-        }
-    }//ปิด Flex
+}
+    //ปิด Flex
       ])
     }
 
